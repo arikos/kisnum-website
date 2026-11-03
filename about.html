@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kituuza School of Nursing & Midwifery</title>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Mobile Navigation Layout Overrides */
+        @media screen and (max-width: 768px) {
+            header.navbar {
+                position: relative !important;
+                z-index: 99999 !important;
+            }
+
+            .menu-toggle {
+                display: block !important;
+                background: transparent !important;
+                border: none !important;
+                font-size: 1.6rem !important;
+                color: #0284c7 !important;
+                cursor: pointer !important;
+                padding: 0.5rem !important;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                width: 100% !important;
+                background: #ffffff !important;
+                flex-direction: column !important;
+                padding: 1rem 1.5rem !important;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+                z-index: 99999 !important;
+                border-top: 1px solid #e2e8f0 !important;
+            }
+
+            .nav-menu.show-mobile-menu {
+                display: flex !important;
+            }
+
+            .nav-menu .nav-link {
+                display: block !important;
+                padding: 0.75rem 0 !important;
+                width: 100% !important;
+                color: #1e293b !important;
+                border-bottom: 1px solid #f1f5f9 !important;
+                font-weight: 600 !important;
+                text-decoration: none !important;
+            }
+
+            .nav-menu .btn {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+                margin-top: 0.75rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="top-info">
+                <span><i class="fa-solid fa-graduation-cap text-accent"></i> Admissions Open for 2026 Intake</span>
+                <span class="desktop-only" style="margin-left: 1.5rem;"><i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga - Mukono</span>
+            </div>
+            <div class="top-contact">
+                <a href="tel:+256700000000"><i class="fa-solid fa-phone"></i> +256 786 311 301/+256 703 417 598</a>
+                <a href="mailto:info@kituuza.ac.ug"><i class="fa-solid fa-envelope"></i> info@kituuza.ac.ug</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="brand">
+                <div class="brand-logo"><i class="fa-solid fa-user-nurse"></i></div>
+                <div class="brand-text">
+                    <span class="title">KITUUZA</span>
+                    <span class="subtitle">School of Nursing & Midwifery</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="global-standards.html" class="nav-link">Global Pathways</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="student-life.html" class="nav-link">Student Life</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="admissions.html#apply" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <div class="page-banner">
+        <div class="container">
+            <h1>About Our Institution</h1>
+            <p>Dedicated to practical clinical excellence, integrity, and world-class health education.</p>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="grid grid-2 align-center gap-8">
+                <div>
+                    <span class="section-tag">WHO WE ARE</span>
+                    <h2>Nurturing Compassionate Health Professionals</h2>
+                    <p class="mb-4">Kituuza School of Nursing & Midwifery is a center of excellence established to train the next generation of healthcare professionals in Uganda and beyond.</p>
+                    <p class="mb-4">Located along Katosi Road in Kisoga, Mukono, our modern campus combines hands-on practical clinical simulation labs with direct hospital ward rotations. We equip candidates with the practical maneuvers, ethical discipline, and emergency care response skills required in modern healthcare environments.</p>
+                </div>
+                <div>
+                    <img src="images/inclass.jpg" alt="Kituuza Classroom Training" style="border-radius: var(--radius); box-shadow: var(--shadow-md);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Pillars / Values -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">OUR GUIDING PRINCIPLES</span>
+                <h2>Vision, Mission & Core Values</h2>
+            </div>
+
+            <div class="grid grid-3 gap-8 mt-6">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h4>Our Vision</h4>
+                    <p style="color: var(--slate); font-size: 0.9rem;">To be a leading healthcare training institution recognized nationally and internationally for practical clinical precision and ethical care.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: #ccfbf1; color: #0d9488;"><i class="fa-solid fa-bullseye"></i></div>
+                    <h4>Our Mission</h4>
+                    <p style="color: var(--slate); font-size: 0.9rem;">To empower competent, compassionate nurses and midwives through rigorous academic instruction, clinical simulations, and regional ward practice.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: #fef3c7; color: #d97706;"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h4>Core Values</h4>
+                    <ul style="margin-left: 1.2rem; font-size: 0.875rem;">
+                        <li>Clinical Integrity & Precision</li>
+                        <li>Compassionate Patient Care</li>
+                        <li>Disciplined Professionalism</li>
+                        <li>Global Language Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <div class="container text-center">
+            <h2>Join Our Next Academic Intake</h2>
+            <p>Take the first step toward a rewarding career in General Nursing or Midwifery today.</p>
+            <div class="cta-buttons">
+                <a href="admissions.html#apply" class="btn btn-accent btn-lg"><i class="fa-solid fa-paper-plane"></i> Apply Online</a>
+                <a href="academics.html" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-book-open"></i> Explore Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4 gap-8">
+                <div>
+                    <h3 class="footer-title">KITUUZA</h3>
+                    <p class="footer-sub">School of Nursing & Midwifery</p>
+                    <p class="footer-text">Educating compassionate, highly skilled healthcare professionals to global clinical standards.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About & Leadership</a></li>
+                        <li><a href="academics.html">Academic Curriculum</a></li>
+                        <li><a href="global-standards.html">Global Pathways</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Admissions</h4>
+                    <ul class="footer-links">
+                        <li><a href="admissions.html">Requirements</a></li>
+                        <li><a href="admissions.html#apply">Online Application</a></li>
+                        <li><a href="student-life.html">Campus Hostels</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p class="footer-contact-info">
+                        <i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga, Mukono<br>
+                        <i class="fa-solid fa-phone"></i> +256 786 311 301/+256 703 417 598<br>
+                        <i class="fa-solid fa-envelope"></i> info@kituuza.ac.ug
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Kituuza School of Nursing & Midwifery, Mukono. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('menu-toggle');
+            var menu = document.getElementById('nav-menu');
+            var icon = document.getElementById('menu-icon');
+
+            if (btn && menu) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    menu.classList.toggle('show-mobile-menu');
+
+                    if (icon) {
+                        if (menu.classList.contains('show-mobile-menu')) {
+                            icon.className = 'fa-solid fa-xmark';
+                        } else {
+                            icon.className = 'fa-solid fa-bars';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Standards & International Pathways | Kituuza School of Nursing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div><i class="fa-solid fa-earth-africa"></i> Educating Healthcare Professionals for Global Impact</div>
+            <div><i class="fa-solid fa-phone"></i> +256 700 000 000 | admissions@kituuza.ac.ug</div>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">KSN</div>
+                <div class="brand-text">
+                    <span class="title">KITUUZA</span>
+                    <span class="subtitle">School of Nursing & Midwifery</span>
+                </div>
+            </a>
+
+            <!-- ADDED: Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="global-standards.html" class="nav-link active">Global Pathways</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="facilities.html" class="nav-link">World-Class Facilities</a>
+                <a href="student-life.html" class="nav-link">Student Life</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="admissions.html#apply" class="btn btn-primary btn-sm">Apply Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>Training Health Leaders for the World</h1>
+            <p>Our curriculum combines clinical excellence with international language proficiency and global healthcare standards.</p>
+        </div>
+    </div>
+
+    <section class="section bg-white">
+        <div class="container">
+            <div class="text-center max-w-3xl" style="margin: 0 auto 3rem;">
+                <span class="section-tag">Global Readiness</span>
+                <h2>Preparing Graduates for Domestic & International Health Systems</h2>
+                <p>Healthcare is a universal profession. Kituuza School of Nursing equips students with the technical mastery, digital health competencies, and cross-cultural communication skills required to excel in health institutions worldwide.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-language"></i></div>
+                    <h3>Bilingual & Multilingual Tracks</h3>
+                    <p>Integrates foreign language modules (German and French) alongside standard curriculum, preparing nurses for European and international placements.</p>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Digital Health & E-Skills</h3>
+                    <p>Students master modern Electronic Health Record (EHR) systems and computer literacy in our modern ICT lab to seamlessly integrate into digital hospital workflows.</p>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Global Nursing Standards</h3>
+                    <p>Practical clinical training modeled around international OSCE standards, patient-centered care protocols, and advanced simulation exercises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2026 Kituuza School of Nursing & Midwifery, Mukono. Training World-Class Healthcare Professionals.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Toggle mobile navigation menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

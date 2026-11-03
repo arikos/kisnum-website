@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director's Profile & Message | Kituuza School of Nursing & Midwifery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .profile-container {
+            padding: 4rem 0;
+            background-color: #f8fafc;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 0;
+        }
+
+        /* Director Photo Column */
+        .profile-sidebar {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-img-wrap {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--accent, #38bdf8);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-sidebar h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .profile-sidebar .role-title {
+            font-size: 0.85rem;
+            color: #38bdf8;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-meta-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: left;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+        }
+
+        .sidebar-meta-list li {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            margin-bottom: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-meta-list i {
+            color: #38bdf8;
+            width: 18px;
+        }
+
+        /* Message Content Column */
+        .profile-body {
+            padding: 3rem 3.5rem;
+        }
+
+        .profile-body h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .quote-callout {
+            background: #f0f9ff;
+            border-left: 4px solid #0284c7;
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0 2rem;
+            font-style: italic;
+            color: #0369a1;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .message-text p {
+            color: #334155;
+            font-size: 0.98rem;
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .pillar-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 1.25rem;
+        }
+
+        .pillar-box h4 {
+            font-size: 0.95rem;
+            color: #0f172a;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pillar-box h4 i {
+            color: #0284c7;
+        }
+
+        .pillar-box p {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 900px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+            .profile-body {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div>
+                <span><i class="fa-solid fa-earth-africa text-accent"></i> Global Healthcare Workforce Education</span>
+                <span><i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga - Mukono</span>
+            </div>
+            <div>
+                <span><i class="fa-solid fa-phone"></i> +256 700 000 000</span>
+                <span><i class="fa-solid fa-envelope"></i> info@kisnum.ac.ug</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">KSN</div>
+                <div class="brand-text">
+                    <span class="title">KITUUZA</span>
+                    <span class="subtitle">School of Nursing & Midwifery</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About & Leadership</a>
+                <a href="global-standards.html" class="nav-link">Global Pathways</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="student-life.html" class="nav-link">Student Life</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="admissions.html#apply" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Page Title Banner -->
+    <section class="page-banner" style="padding: 3.5rem 0; background: linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.75)), url('images/hero-bg.jpg') center/cover;">
+        <div class="container">
+            <span class="badge mb-2">INSTITUTIONAL LEADERSHIP</span>
+            <h1 style="color: #fff; font-size: 2.2rem;">Director's Profile & Strategic Vision</h1>
+            <p style="color: #cbd5e1; margin-top: 0.5rem; font-size: 1rem;">From battlefield medical service to educating a disciplined, globally competitive nursing workforce.</p>
+        </div>
+    </section>
+
+    <!-- Director Profile & Message Section -->
+    <section class="profile-container">
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-grid">
+                    
+                    <!-- Left Sidebar: Photo & Key Details -->
+                    <div class="profile-sidebar">
+                        <div class="profile-img-wrap">
+                            <img src="images/director.jpg" alt="Dr. Executive Director">
+                        </div>
+                        <h2>Dr. James Kiyengo</h2>
+                        <span class="role-title">Founding Director & Medical Lead</span>
+
+                        <ul class="sidebar-meta-list">
+                            <li><i class="fa-solid fa-shield-halved"></i> Veteran Military Medical Officer</li>
+                            <li><i class="fa-solid fa-person-military-rifle"></i> Frontline Medical Operations (Somalia, Sudan, N. Uganda)</li>
+                            <li><i class="fa-solid fa-language"></i> Language Integration Advocate</li>
+                            <li><i class="fa-solid fa-music"></i> Creative Arts & Band Patron</li>
+                        </ul>
+
+                        <div style="margin-top: 2rem; width: 100%;">
+                            <a href="admissions.html#apply" class="btn btn-primary btn-sm w-100" style="display: block; text-align: center;"><i class="fa-solid fa-user-plus"></i> Join Kituuza Today</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Body: Full Message Narrative -->
+                    <div class="profile-body">
+                        <span class="section-tag">Director's Message</span>
+                        <h1>Tempered in Duty, Dedicated to Global Health Excellence</h1>
+
+                        <div class="quote-callout">
+                            "In the heat of battle medical operations, there is no second guessing. Precision, split-second discipline, deep empathy, and absolute composure are what separate survival from loss. That is the exact DNA we instill in every student at Kituuza."
+                        </div>
+
+                        <div class="message-text">
+                            <p>My medical career was forged under the most demanding conditions imaginable. Serving as a medical officer alongside the Uganda People's Defence Forces (UPDF) took me directly into intense conflict zones across Northern Uganda during the LRA insurgency, the arid battlegrounds of Sudan, and high-stakes peacekeeping deployments under AMISOM in Somalia.</p>
+
+                            <p>Treating severe trauma under fire taught me priceless lessons about human resilience, time consciousness, unwavering integrity, and the sacred value of medical duty. In combat medicine, excuses do not exist. Success requires emotional strength, flawless technical execution, and immediate cohesion under pressure.</p>
+
+                            <p>It is precisely this military-grade discipline and operational rigor that I brought into founding <strong>Kituuza School of Nursing & Midwifery</strong>. I made a firm promise: our institution will never produce passive academic certificate holders. Instead, we instill our learners with absolute punctuality, clinical sharpness, ethical firmness, and an unshakable commitment to patient care.</p>
+
+                            <p>Furthermore, recognizing that modern healthcare is a global market, I introduced two unique foundational pillars into our core curriculum:</p>
+
+                            <div class="pillars-grid">
+                                <div class="pillar-box">
+                                    <h4><i class="fa-solid fa-globe"></i> Foreign Language Tracks</h4>
+                                    <p>I envisioned nurses who can seamlessly step into European and international health systems. We integrate mandatory German (B1/B2) and French language modules right alongside clinical rotations.</p>
+                                </div>
+                                <div class="pillar-box">
+                                    <h4><i class="fa-solid fa-compact-disc"></i> Music & Creative Discipline</h4>
+                                    <p>Medicine demands mental balance and teamwork. Through our institutional band and music programs, we build emotional resilience, rhythm, precision, and student camaraderie.</p>
+                                </div>
+                            </div>
+
+                            <p style="margin-top: 1.5rem;">When you send your child or step into Kituuza yourself, you are joining an environment where character is built with intent. We prepare you not just to work in a local ward, but to stand out with distinction anywhere in the world.</p>
+
+                            <div style="margin-top: 2.5rem; border-top: 1px solid #e2e8f0; padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                                <div>
+                                    <strong style="color: #0f172a; display: block; font-size: 1.05rem;">Dr. James Kiyengo</strong>
+                                    <span style="font-size: 0.85rem; color: #64748b;">Director, Kituuza School of Nursing & Midwifery</span>
+                                </div>
+                                <a href="index.html" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4" style="gap: 2rem;">
+                <div>
+                    <h3 style="color: #fff;">KITUUZA</h3>
+                    <p style="font-size: 0.85rem; color: #94a3b8;">School of Nursing & Midwifery</p>
+                    <p style="font-size: 0.85rem; margin-top: 0.75rem; color: #94a3b8;">Educating healthcare professionals grounded in discipline and international standards.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About & Leadership</a></li>
+                        <li><a href="global-standards.html">Global Pathways</a></li>
+                        <li><a href="academics.html">Academic Programs</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Admissions</h4>
+                    <ul class="footer-links">
+                        <li><a href="admissions.html">Entry Criteria</a></li>
+                        <li><a href="admissions.html#apply">Online Application</a></li>
+                        <li><a href="student-life.html">Student Accommodation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.8; color: #94a3b8;">
+                        Off Katosi Road, Kisoga<br>
+                        Mukono, Uganda<br>
+                        <strong>Phone:</strong> +256 700 000 000<br>
+                        <strong>Email:</strong> info@kisnum.ac.ug
+                    </p>
+                </div>
+            </div>
+            <div class="text-center copyright">
+                <p>&copy; 2026 Kituuza School of Nursing & Midwifery, Mukono. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

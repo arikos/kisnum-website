@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Campus & Clinical Labs | Kituuza School of Nursing</title>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Mobile Navigation Layout Overrides */
+        @media screen and (max-width: 768px) {
+            header.navbar {
+                position: relative !important;
+                z-index: 99999 !important;
+            }
+
+            .menu-toggle {
+                display: block !important;
+                background: transparent !important;
+                border: none !important;
+                font-size: 1.6rem !important;
+                color: #0284c7 !important;
+                cursor: pointer !important;
+                padding: 0.5rem !important;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                width: 100% !important;
+                background: #ffffff !important;
+                flex-direction: column !important;
+                padding: 1rem 1.5rem !important;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+                z-index: 99999 !important;
+                border-top: 1px solid #e2e8f0 !important;
+            }
+
+            .nav-menu.show-mobile-menu {
+                display: flex !important;
+            }
+
+            .nav-menu .nav-link {
+                display: block !important;
+                padding: 0.75rem 0 !important;
+                width: 100% !important;
+                color: #1e293b !important;
+                border-bottom: 1px solid #f1f5f9 !important;
+                font-weight: 600 !important;
+                text-decoration: none !important;
+            }
+
+            .nav-menu .btn {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+                margin-top: 0.75rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div><i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga, Mukono - Uganda</div>
+            <div><i class="fa-solid fa-phone"></i> +256 786 311 301/+256 703 417 598</div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">KSN</div>
+                <div class="brand-text">
+                    <span class="title">KITUUZA</span>
+                    <span class="subtitle">School of Nursing & Midwifery</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="global-standards.html" class="nav-link">Global Pathways</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="facilities.html" class="nav-link active">Facilities</a>
+                <a href="student-life.html" class="nav-link">Student Life</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="admissions.html#apply" class="btn btn-primary btn-sm">Apply Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <div class="container">
+            <h1>Campus Infrastructure & Practical Labs</h1>
+            <p>Designed to support rigorous clinical training, modern research, and vibrant campus living.</p>
+        </div>
+    </div>
+
+    <!-- Facilities Grid Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="grid grid-3">
+                
+                <div class="facility-card">
+                    <img src="images/nursing-lab.jpg" alt="Clinical Simulation Lab" width="500" height="300">
+                    <div class="facility-card-body">
+                        <h3><i class="fa-solid fa-heart-pulse text-primary"></i> Simulation Skills Lab</h3>
+                        <p>An advanced simulation lab with medical manikins, maternal delivery simulators, and clinical equipment enabling hands-on practice before hospital rotations.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="images/complab.jpg" alt="ICT Center" width="500" height="300">
+                    <div class="facility-card-body">
+                        <h3><i class="fa-solid fa-laptop text-primary"></i> Modern ICT & E-Learning Center</h3>
+                        <p>High-speed internet access, electronic journal access, and computer training to prepare students for international digital health record management.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="images/library.jpg" alt="Digital Health Library" onerror="this.src='https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800'" width="500" height="300">
+                    <div class="facility-card-body">
+                        <h3><i class="fa-solid fa-book-medical text-primary"></i> Medical Science Library</h3>
+                        <p>Extensive physical and digital resource collection featuring international journals, pharmacology manuals, and midwifery research archives.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="images/hostel.jpg" alt="Student Residential Halls" onerror="this.src='https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=800'">
+                    <div class="facility-card-body">
+                        <h3><i class="fa-solid fa-building-user text-primary"></i> Secure On-Campus Housing</h3>
+                        <p>Modern hostels providing clean, safe accommodation for both female and male students, equipped with 24/7 security and warden oversight.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="images/bus.jpg" alt="Campus Bus and Transport" width="500" height="300">
+                    <div class="facility-card-body">
+                        <h3><i class="fa-solid fa-bus text-primary"></i> Campus Bus & Clinical Transport</h3>
+                        <p>Dedicated institutional transport providing safe, reliable commute for students during hospital clinical placements, community outreach, and educational field visits.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="images/ball.jpg" alt="Sports Grounds" width="500" height="300">
+                    <div class="facility-card-body">
+                        <h3><i class="fa-solid fa-volleyball text-primary"></i> Athletic & Recreation Grounds</h3>
+                        <p>Outdoor sports facilities for football, netball, and wellness activities to promote physical fitness among nursing candidates.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2026 Kituuza School of Nursing & Midwifery, Mukono. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('menu-toggle');
+            var menu = document.getElementById('nav-menu');
+            var icon = document.getElementById('menu-icon');
+
+            if (btn && menu) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    menu.classList.toggle('show-mobile-menu');
+
+                    if (icon) {
+                        if (menu.classList.contains('show-mobile-menu')) {
+                            icon.className = 'fa-solid fa-xmark';
+                        } else {
+                            icon.className = 'fa-solid fa-bars';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

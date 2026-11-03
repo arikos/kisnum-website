@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics & Programs | Kituuza School of Nursing & Midwifery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .curriculum-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .program-img-banner {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .program-card-body {
+            padding: 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .curriculum-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .curriculum-list li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            color: #475569;
+        }
+
+        .curriculum-list li i {
+            color: var(--primary, #0284c7);
+        }
+
+        /* Feature Cards for Practical Training */
+        .feature-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .feature-thumb {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .feature-content {
+            padding: 1.5rem;
+        }
+
+        .feature-icon-badge {
+            width: 40px;
+            height: 40px;
+            background: #e0f2fe;
+            color: #0284c7;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Mobile Navigation Layout Overrides */
+        @media screen and (max-width: 768px) {
+            header.navbar {
+                position: relative !important;
+                z-index: 99999 !important;
+            }
+
+            .menu-toggle {
+                display: block !important;
+                background: transparent !important;
+                border: none !important;
+                font-size: 1.6rem !important;
+                color: #0284c7 !important;
+                cursor: pointer !important;
+                padding: 0.5rem !important;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                width: 100% !important;
+                background: #ffffff !important;
+                flex-direction: column !important;
+                padding: 1rem 1.5rem !important;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+                z-index: 99999 !important;
+                border-top: 1px solid #e2e8f0 !important;
+            }
+
+            .nav-menu.show-mobile-menu {
+                display: flex !important;
+            }
+
+            .nav-menu .nav-link {
+                display: block !important;
+                padding: 0.75rem 0 !important;
+                width: 100% !important;
+                color: #1e293b !important;
+                border-bottom: 1px solid #f1f5f9 !important;
+                font-weight: 600 !important;
+                text-decoration: none !important;
+            }
+
+            .nav-menu .btn {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+                margin-top: 0.75rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div>
+                <span><i class="fa-solid fa-earth-africa text-accent"></i> Global Healthcare Workforce Education</span>
+                <span><i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga - Mukono</span>
+            </div>
+            <div>
+                <span><i class="fa-solid fa-phone"></i> +256 786 311 301/+256 703 417 598</span>
+                <span><i class="fa-solid fa-envelope"></i> info@kituuza.ac.ug</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">KSN</div>
+                <div class="brand-text">
+                    <span class="title">KITUUZA</span>
+                    <span class="subtitle">School of Nursing & Midwifery</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About & Leadership</a>
+                <a href="global-standards.html" class="nav-link">Global Pathways</a>
+                <a href="academics.html" class="nav-link active">Academics</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="student-life.html" class="nav-link">Student Life</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="admissions.html#apply" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Banner / Hero Section -->
+    <section class="page-banner" style="padding: 5rem 0; background: linear-gradient(to right, rgba(15,23,42,0.88), rgba(15,23,42,0.75)), url('images/inclass.jpg') center/cover;">
+        <div class="container text-center max-w-3xl" style="margin: 0 auto;">
+            <span class="badge mb-4">COMPREHENSIVE HEALTH CURRICULUM</span>
+            <h1 style="font-size: 2.8rem; color: #fff;">Academic Programs & Curriculum</h1>
+            <p style="font-size: 1.15rem; color: #cbd5e1; margin-top: 1rem;">Fully accredited 2.5-year clinical certificates structured in accordance with national health education regulations and international patient care benchmarks.</p>
+        </div>
+    </section>
+
+    <!-- Programs Detail Section -->
+    <section class="section bg-slate" style="background: #f8fafc;">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 2.5rem;">
+                
+                <!-- Certificate in Nursing -->
+                <div class="curriculum-card" id="nursing" style="border-top: 5px solid var(--primary, #0284c7);">
+                    <img src="images/standardized-patient.jpg" alt="Nursing Clinical Skills Practice" class="program-img-banner">
+                    <div class="program-card-body">
+                        <div>
+                            <div class="flex-between mb-3">
+                                <span class="badge">2.5 YEARS DURATION</span>
+                                <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary, #0284c7);"><i class="fa-solid fa-graduation-cap"></i> ACCREDITED</span>
+                            </div>
+                            <h2>Certificate in General Nursing</h2>
+                            <p class="mt-3" style="color: #64748b;">Prepares students to deliver high-quality bedside nursing, administer medical interventions, manage surgical wards, and provide compassionate healthcare in diverse hospital environments.</p>
+                            
+                            <h4 style="margin-top: 1.5rem; color: #0f172a; font-size: 1rem;">Core Curriculum Modules:</h4>
+                            <ul class="curriculum-list">
+                                <li><i class="fa-solid fa-circle-check"></i> Human Anatomy, Physiology & Biochemistry</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Fundamental Nursing Principles & Bedside Care</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Clinical Pharmacology & Medication Safety</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Medical & Surgical Nursing Practicals</li>
+                                <li><i class="fa-solid fa-circle-check"></i> First Aid, Emergency & Trauma Management</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Public Health, Hygiene & Community Nursing</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Medical Ethics, Professionalism & Legal Practice</li>
+                                <li><i class="fa-solid fa-circle-check"></i> German / French Healthcare Language Track</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <a href="admissions.html#apply" class="btn btn-primary w-full text-center" style="display: block;"><i class="fa-solid fa-file-pen"></i> Apply for Nursing Program</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate in Midwifery -->
+                <div class="curriculum-card" id="midwifery" style="border-top: 5px solid var(--secondary, #0d9488);">
+                    <img src="images/nursing-lab.jpg" alt="Midwifery and Maternal Care" class="program-img-banner">
+                    <div class="program-card-body">
+                        <div>
+                            <div class="flex-between mb-3">
+                                <span class="badge" style="background: var(--secondary, #0d9488); color: #fff;">2.5 YEARS DURATION</span>
+                                <span style="font-size: 0.85rem; font-weight: 700; color: var(--secondary, #0d9488);"><i class="fa-solid fa-graduation-cap"></i> ACCREDITED</span>
+                            </div>
+                            <h2>Certificate in Midwifery</h2>
+                            <p class="mt-3" style="color: #64748b;">Specialized education focused on maternal health, prenatal clinical monitoring, safe childbirth management, postnatal care, and newborn resuscitation.</p>
+
+                            <h4 style="margin-top: 1.5rem; color: #0f172a; font-size: 1rem;">Core Curriculum Modules:</h4>
+                            <ul class="curriculum-list">
+                                <li><i class="fa-solid fa-circle-check"></i> Reproductive Anatomy & Female Physiology</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Antenatal Screening, Care & Maternal Nutrition</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Labor Management & Safe Delivery Practicals</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Emergency Obstetric & Neonatal Resuscitation</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Postnatal Care & Family Health Leadership</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Gynaecological & Child Health Nursing</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Community Reproductive Health Mobilization</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Digital Health Records & E-Health Literacy</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <a href="admissions.html#apply" class="btn btn-secondary w-full text-center" style="display: block;"><i class="fa-solid fa-file-pen"></i> Apply for Midwifery Program</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Training Approach Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="text-center max-w-3xl" style="margin: 0 auto 3rem;">
+                <span class="section-tag">Learning Methodology</span>
+                <h2>Hands-On Practical Clinical Mastery</h2>
+                <p class="section-subtitle">We balance classroom instruction with intensive clinical skill simulations and direct hospital rotations.</p>
+            </div>
+
+            <div class="grid grid-3" style="gap: 2rem;">
+                
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <img src="images/simulations.jpeg" alt="Simulation Skill Labs" class="feature-thumb">
+                    <div class="feature-content">
+                        <div class="feature-icon-badge"><i class="fa-solid fa-vial"></i></div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Simulation Skill Labs</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">Students practice clinical maneuvers, IV insertion, catheterization, and delivery simulations on high-fidelity manikins before touching patients.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <img src="images/rotations.jpeg" alt="Hospital Rotations & Field Training" class="feature-thumb">
+                    <div class="feature-content">
+                        <div class="feature-icon-badge" style="background: #ccfbf1; color: #0d9488;"><i class="fa-solid fa-hospital-user"></i></div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Hospital Rotations</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">Supervised ward placements in regional referral hospitals ensure real-world patient care experience under certified clinical instructors.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <img src="images/reading.jpg" alt="Academic Study & Digital Literacy" class="feature-thumb">
+                    <div class="feature-content">
+                        <div class="feature-icon-badge" style="background: #f0f9ff; color: #0284c7;"><i class="fa-solid fa-laptop-medical"></i></div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Digital Health Training</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">Training in modern digital health technologies, patient record management, and ICT laboratory modules alongside medical studies.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4" style="gap: 2rem;">
+                <div>
+                    <h3 style="color: #fff;">KITUUZA</h3>
+                    <p style="font-size: 0.85rem; color: #94a3b8;">School of Nursing & Midwifery</p>
+                    <p style="font-size: 0.85rem; margin-top: 0.75rem; color: #94a3b8;">Educating healthcare professionals grounded in discipline and international standards.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About & Leadership</a></li>
+                        <li><a href="global-standards.html">Global Pathways</a></li>
+                        <li><a href="academics.html">Academic Programs</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Admissions</h4>
+                    <ul class="footer-links">
+                        <li><a href="admissions.html">Entry Criteria</a></li>
+                        <li><a href="admissions.html#apply">Online Application</a></li>
+                        <li><a href="student-life.html">Student Accommodation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.8; color: #94a3b8;">
+                        Off Katosi Road, Kisoga<br>
+                        Mukono, Uganda<br>
+                        <strong>Phone:</strong> +256 786 311 301/+256 703 417 598<br>
+                        <strong>Email:</strong> info@kituuza.ac.ug
+                    </p>
+                </div>
+            </div>
+            <div class="text-center copyright">
+                <p>&copy; 2026 Kituuza School of Nursing & Midwifery, Mukono. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('menu-toggle');
+            var menu = document.getElementById('nav-menu');
+            var icon = document.getElementById('menu-icon');
+
+            if (btn && menu) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    menu.classList.toggle('show-mobile-menu');
+
+                    if (icon) {
+                        if (menu.classList.contains('show-mobile-menu')) {
+                            icon.className = 'fa-solid fa-xmark';
+                        } else {
+                            icon.className = 'fa-solid fa-bars';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life & Campus Community | Kituuza School of Nursing & Midwifery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Strict Grid & Card Constraints for Mixed Media */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .activity-card {
+            width: 100%;
+            max-width: 100%;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .activity-card img.activity-img,
+        .activity-card video.activity-img {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            flex-shrink: 0;
+            border: none;
+            outline: none;
+        }
+
+        .activity-body {
+            padding: 1.25rem;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .grid-3 {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div>
+                <span><i class="fa-solid fa-earth-africa text-accent"></i> Global Healthcare Workforce Education</span>
+                <span><i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga - Mukono</span>
+            </div>
+            <div>
+                <span><i class="fa-solid fa-phone"></i> +256 700 000 000</span>
+                <span><i class="fa-solid fa-envelope"></i> info@kisnum.ac.ug</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">KSN</div>
+                <div class="brand-text">
+                    <span class="title">KITUUZA</span>
+                    <span class="subtitle">School of Nursing & Midwifery</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About & Leadership</a>
+                <a href="global-standards.html" class="nav-link">Global Pathways</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="student-life.html" class="nav-link active">Student Life</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="admissions.html#apply" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Page Title Banner -->
+    <section class="page-banner" style="padding: 5rem 0; background: linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.75)), url('images/campus.jpg') center/cover;">
+        <div class="container text-center max-w-3xl" style="margin: 0 auto;">
+            <span class="badge mb-4">CAMPUS COMMUNITY & WELLNESS</span>
+            <h1 style="color: #fff; font-size: 2.5rem;">Vibrant Student Life at Kituuza</h1>
+            <p style="color: #cbd5e1; font-size: 1.1rem; margin-top: 0.75rem;">Balancing rigorous clinical nursing training with leadership, community service, sports, and holistic well-being.</p>
+        </div>
+    </section>
+
+    <!-- Co-Curricular & Events Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="text-center max-w-3xl" style="margin: 0 auto 3rem;">
+                <span class="section-tag">Co-Curriculars & Practical Exposure</span>
+                <h2>Activities, Events & Community Engagement</h2>
+                <p class="section-subtitle">Beyond classroom lectures and ward rounds, our students participate in dynamic campus activities that develop leadership, teamwork, empathy, and field emergency response skills.</p>
+            </div>
+
+            <div class="grid-3">
+
+                <!-- Activity 1: Wrestling & Medical Cover Video -->
+                <div class="activity-card">
+                    <video class="activity-img" controls preload="metadata" poster="images/campus.jpg">
+                        <source src="videos/wrestling.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="activity-body">
+                        <span class="badge mb-2"><i class="fa-solid fa-kit-medical"></i> COMMUNITY & FIRST AID</span>
+                        <h3>Wrestling Event & Field Medical Cover</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                            Kituuza hosted invited professional wrestlers for an exciting community event on campus. While local residents enjoyed the entertainment, our nursing students managed the field first aid station—practicing real-time sports injury assessment, triage, and emergency care.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 2: Sports & Tournaments (ball.jpg) -->
+                <div class="activity-card">
+                    <img src="images/ball.jpg" alt="Student Lineup for Football and Volleyball Matches" class="activity-img">
+                    <div class="activity-body">
+                        <span class="badge mb-2"><i class="fa-solid fa-volleyball"></i> ATHLETICS & SPORTS</span>
+                        <h3>Football & Volleyball Tournaments</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                            Students lined up and ready for inter-house and friendly competitive matches. Organized sports build team spirit, physical stamina, and healthy recreation outside academic hours.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 3: Interactive Classrooms (inclass.jpg) -->
+                <div class="activity-card">
+                    <img src="images/inclass.jpg" alt="Interactive Classroom Learning" class="activity-img">
+                    <div class="activity-body">
+                        <span class="badge mb-2"><i class="fa-solid fa-chalkboard-user"></i> ACADEMIC ENGAGEMENT</span>
+                        <h3>Interactive Classroom Sessions</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                            Dynamic, tutor-led theory and interactive case study discussions where nursing and midwifery students actively collaborate and solve clinical scenarios together.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 4: Focused Study (reading.jpg) -->
+                <div class="activity-card">
+                    <img src="images/reading.jpg" alt="Students Reading and Studying" class="activity-img">
+                    <div class="activity-body">
+                        <span class="badge mb-2"><i class="fa-solid fa-book-open-reader"></i> SELF-STUDY</span>
+                        <h3>Quiet Study & Research Focus</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                            Dedicated reading and group review spaces allow students to consolidate lecture notes, revise clinical manuals, and prepare thoroughly for professional licensing examinations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 5: Campus Brass Band -->
+                <div class="activity-card">
+                    <img src="images/brass-band.jpg" alt="Campus Brass Band" class="activity-img">
+                    <div class="activity-body">
+                        <span class="badge mb-2"><i class="fa-solid fa-music"></i> MUSIC & ARTS</span>
+                        <h3>Campus Brass Band & Choir</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                            Our signature student brass band and vocal ensemble perform during official institutional ceremonies, parades, and regional community events, building pride and unity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 6: Language & Cultural Clubs -->
+                <div class="activity-card">
+                    <img src="images/language-class.jpg" alt="Language Clubs" class="activity-img">
+                    <div class="activity-body">
+                        <span class="badge mb-2"><i class="fa-solid fa-language"></i> GLOBAL CLUBS</span>
+                        <h3>German & French Immersion Clubs</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                            Interactive language circles where students practice conversation and European healthcare etiquette in preparation for local and international healthcare careers.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Residential Life & Campus Amenities -->
+    <section class="section bg-slate" style="background: #f8fafc;">
+        <div class="container">
+            <div class="text-center max-w-3xl" style="margin: 0 auto 3rem;">
+                <span class="section-tag">Residential & Living Standards</span>
+                <h2>Campus Life & Comfort</h2>
+                <p class="section-subtitle">Providing a secure, comfortable, and supportive environment where students live, study, and thrive together.</p>
+            </div>
+
+            <div class="amenities-grid">
+
+                <!-- Amenity 1: Spacious Dining Hall with Image (dining.jpg) -->
+                <div class="activity-card" style="border-top: 4px solid var(--secondary);">
+                    <img src="images/dining.jpg" alt="Spacious Student Dining Hall" class="activity-img">
+                    <div class="activity-body">
+                        <span class="badge mb-2"><i class="fa-solid fa-utensils"></i> CAMPUS AMENITIES</span>
+                        <h3>Spacious Dining Hall</h3>
+                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                            A clean, well-ventilated, and spacious dining facility designed to comfortably seat the student body. Serves freshly prepared, balanced daily meals to keep healthcare trainees healthy and energized.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Amenity 2: Secure Hostels -->
+                <div class="card" style="border-top: 4px solid var(--primary);">
+                    <span class="badge mb-2"><i class="fa-solid fa-bed"></i> ACCOMMODATION</span>
+                    <h3>Secure & Clean Student Hostels</h3>
+                    <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                        Separate, well-monitored residential quarters for male and female students with 24/7 security, continuous water supply, and dedicated study areas.
+                    </p>
+                </div>
+
+                <!-- Amenity 3: Professional Ethics & Discipline -->
+                <div class="card" style="border-top: 4px solid var(--accent-gold, #d97706);">
+                    <span class="badge mb-2"><i class="fa-solid fa-user-shield"></i> CORE VALUES</span>
+                    <h3>Rigorous Discipline & Professional Ethics</h3>
+                    <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+                        Structured daily routines, dress codes, and time management habits that cultivate personal integrity, resilience, and professional clinical etiquette.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4" style="gap: 2rem;">
+                <div>
+                    <h3 style="color: #fff;">KITUUZA</h3>
+                    <p style="font-size: 0.85rem; color: #94a3b8;">School of Nursing & Midwifery</p>
+                    <p style="font-size: 0.85rem; margin-top: 0.75rem; color: #94a3b8;">Educating healthcare professionals grounded in discipline and international standards.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About & Leadership</a></li>
+                        <li><a href="global-standards.html">Global Pathways</a></li>
+                        <li><a href="academics.html">Academic Programs</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Admissions</h4>
+                    <ul class="footer-links">
+                        <li><a href="admissions.html">Entry Criteria</a></li>
+                        <li><a href="admissions.html#apply">Online Application</a></li>
+                        <li><a href="student-life.html">Student Accommodation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.8; color: #94a3b8;">
+                        Off Katosi Road, Kisoga<br>
+                        Mukono, Uganda<br>
+                        <strong>Phone:</strong> +256 700 000 000<br>
+                        <strong>Email:</strong> info@kisnum.ac.ug
+                    </p>
+                </div>
+            </div>
+            <div class="text-center copyright">
+                <p>&copy; 2026 Kituuza School of Nursing & Midwifery, Mukono. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

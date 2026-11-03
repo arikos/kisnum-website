@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kituuza School of Nursing & Midwifery | Excellence in Health Sciences</title>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Hero Section Layout Modifications */
+        .hero-vibrant-bg {
+            padding: 12rem 0 3.5rem;
+            background: url('images/admin.jpg') center/cover no-repeat;
+            position: relative;
+            min-height: 82vh;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .hero-split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            align-items: stretch;
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero-glass-card-split {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 1.75rem 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Dynamic Styled Sections */
+        .clinical-section-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            padding: 5rem 0;
+        }
+
+        .clinical-section-bg::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .clinical-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+            transition: all 0.35s ease;
+        }
+
+        .clinical-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .clinical-card .hero-card-body h3 {
+            color: #f8fafc;
+        }
+
+        .clinical-card .hero-card-body p {
+            color: #94a3b8;
+        }
+
+        .facilities-section-bg {
+            background: linear-gradient(180deg, #f0fdf4 0%, #e0f2fe 100%);
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .facilities-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid rgba(14, 165, 233, 0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .facilities-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(14, 165, 233, 0.18);
+        }
+
+        @media (max-width: 868px) {
+            .hero-vibrant-bg {
+                padding: 6rem 0 2rem;
+            }
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-glass-card-split {
+                padding: 1.25rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="seamless-layout">
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="top-info">
+                <span><i class="fa-solid fa-graduation-cap text-accent"></i> Admissions Open for 2026 Intake</span>
+                <span class="desktop-only" style="margin-left: 1.5rem;"><i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga - Mukono</span>
+            </div>
+            <div class="top-contact">
+                <a href="tel:+256700000000"><i class="fa-solid fa-phone"></i> +256 786 311301/+256 703 417598</a>
+                <a href="mailto:info@kituuza.ac.ug"><i class="fa-solid fa-envelope"></i> info@kituuza.ac.ug</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="brand">
+                <div class="brand-logo"><i class="fa-solid fa-user-nurse"></i></div>
+                <div class="brand-text">
+                    <span class="title">KITUUZA</span>
+                    <span class="subtitle">School of Nursing & Midwifery</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="global-standards.html" class="nav-link">Global Pathways</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="student-life.html" class="nav-link">Student Life</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="admissions.html#apply" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Lowered Hero Section with Two Side-by-Side Glass Cards -->
+    <section class="hero-section section-no-gap hero-vibrant-bg">
+        <div class="container">
+            <div class="hero-split-grid">
+                
+                <!-- Box 1: Core Value Proposition & Accreditation -->
+                <div class="hero-glass-card-split">
+                    <div>
+                        <span class="badge-hero" style="background: var(--primary, #0284c7); color: #ffffff; padding: 0.3rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.75rem; display: inline-block;"><i class="fa-solid fa-certificate"></i> FULLY ACCREDITED</span>
+                        <h1 class="hero-title" style="color: #ffffff; font-size: 2.1rem; font-weight: 800; margin-top: 0.6rem; margin-bottom: 0.4rem; line-height: 1.2;">Shaping Skilled Healthcare Leaders</h1>
+                        <p style="color: #e2e8f0; font-size: 0.95rem; line-height: 1.5; margin: 0;">Dedicated to global health standards through clinical excellence, hands-on simulation training, and patient-centered care.</p>
+                    </div>
+                </div>
+
+                <!-- Box 2: Key Training Focus & Call to Action -->
+                <div class="hero-glass-card-split">
+                    <div>
+                        <h3 style="color: #38bdf8; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.4rem;"><i class="fa-solid fa-stethoscope"></i> Clinical & Field Excellence</h3>
+                        <p style="color: #e2e8f0; font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.2rem;">Active hospital rotations, surgical observation wards, and community outreach preparations.</p>
+                        <div class="hero-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                            <a href="admissions.html#apply" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-signature"></i> Apply Online</a>
+                            <a href="#sports-first-aid" class="btn btn-outline-light btn-sm"><i class="fa-solid fa-futbol"></i> Sports & First Aid</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Rotations & Practicals Section (Dark Elegant Theme) -->
+    <section class="clinical-section-bg">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 3rem;">
+                <span class="section-tag" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 0.4rem 1rem; border-radius: 50px;">PRACTICAL EXPOSURE</span>
+                <h2 style="color: #ffffff; font-size: 2.2rem; margin-top: 0.5rem;">Clinical Rotations & Field Training</h2>
+                <p style="color: #94a3b8; max-width: 650px; margin: 0 auto;">Direct patient engagement, surgical observations, and hands-on community health practice.</p>
+            </div>
+
+            <div class="grid grid-4 gap-6">
+                <!-- Card 1: Ward Briefings -->
+                <div class="hero-feature-card clinical-card" style="margin: 0;">
+                    <div class="hero-card-img">
+                        <img src="images/WardBrief.jpeg" alt="Outside Clinical Ward Briefing">
+                        <span class="hero-card-badge"><i class="fa-solid fa-users"></i> Field Orientation</span>
+                    </div>
+                    <div class="hero-card-body" style="padding: 1.25rem;">
+                        <h3>Health Center Briefings</h3>
+                        <p>Students attending morning clinical briefings and ward protocols.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Operating Theater Rotations -->
+                <div class="hero-feature-card clinical-card" style="margin: 0;">
+                    <div class="hero-card-img">
+                        <img src="images/ward2.jpeg" alt="Operating Theater Training">
+                        <span class="hero-card-badge badge-teal"><i class="fa-solid fa-hospital-user"></i> Surgical Wards</span>
+                    </div>
+                    <div class="hero-card-body" style="padding: 1.25rem;">
+                        <h3>Operating Theater Rotations</h3>
+                        <p>Active participation in live surgical procedures with clinical mentors.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Hands-On Surgical Skills -->
+                <div class="hero-feature-card clinical-card" style="margin: 0;">
+                    <div class="hero-card-img">
+                        <img src="images/ward.jpeg" alt="Clinical Precision Work">
+                        <span class="hero-card-badge badge-amber"><i class="fa-solid fa-stethoscope"></i> Surgical Skills</span>
+                    </div>
+                    <div class="hero-card-body" style="padding: 1.25rem;">
+                        <h3>Clinical Precision Care</h3>
+                        <p>Practical mentoring in handling surgical instruments and sterile setups.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Community Nursing -->
+                <div class="hero-feature-card clinical-card" style="margin: 0;">
+                    <div class="hero-card-img">
+                        <img src="images/ward3.jpeg" alt="Community Nursing Fieldwork">
+                        <span class="hero-card-badge badge-blue"><i class="fa-solid fa-hand-holding-medical"></i> Community Care</span>
+                    </div>
+                    <div class="hero-card-body" style="padding: 1.25rem;">
+                        <h3>Field & Community Work</h3>
+                        <p>Public health assessments, hospital ward visits, and community outreach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moving Image Marquee Section -->
+    <section class="marquee-section section-no-gap">
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <!-- First Set of Images -->
+                <div class="marquee-item"><img src="images/WardBrief.jpeg" alt="Outside Ward Briefings"><span>Outside Ward Briefings</span></div>
+                <div class="marquee-item"><img src="images/ward2.jpeg" alt="Surgical Theater Practicals"><span>Surgical Practicals</span></div>
+                <div class="marquee-item"><img src="images/ward.jpeg" alt="Clinical Precision Work"><span>Clinical Precision</span></div>
+                <div class="marquee-item"><img src="images/ward3.jpeg" alt="Hospital Ward Rotations"><span>Hospital Ward Rotations</span></div>
+                <div class="marquee-item"><img src="images/simulations.jpeg" alt="Simulation Labs"><span>Clinical Simulations</span></div>
+                <div class="marquee-item"><img src="images/reading.jpg" alt="Digital Library"><span>Resource Library</span></div>
+
+                <!-- Duplicated Set for Infinite Loop -->
+                <div class="marquee-item"><img src="images/WardBrief.jpeg" alt="Outside Ward Briefings"><span>Outside Ward Briefings</span></div>
+                <div class="marquee-item"><img src="images/ward2.jpeg" alt="Surgical Theater Practicals"><span>Surgical Practicals</span></div>
+                <div class="marquee-item"><img src="images/ward.jpeg" alt="Clinical Precision Work"><span>Clinical Precision</span></div>
+                <div class="marquee-item"><img src="images/ward3.jpeg" alt="Hospital Ward Rotations"><span>Hospital Ward Rotations</span></div>
+                <div class="marquee-item"><img src="images/simulations.jpeg" alt="Simulation Labs"><span>Clinical Simulations</span></div>
+                <div class="marquee-item"><img src="images/reading.jpg" alt="Digital Library"><span>Resource Library</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Director's Message Section -->
+    <section class="section directors-section section-no-gap" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="grid grid-2 gap-8 align-center">
+                <div class="director-img-container">
+                    <div class="img-backdrop"></div>
+                    <img src="images/director.jpg" alt="Director of Kituuza School of Nursing & Midwifery" class="director-img">
+                    <div class="director-badge">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <span>Excellence in Care</span>
+                    </div>
+                </div>
+
+                <div class="director-text">
+                    <span class="section-tag">WELCOME ADDRESS</span>
+                    <h2>Message from the Director</h2>
+                    <p class="lead-quote">"At Kituuza School of Nursing and Midwifery, our mission goes beyond academic instruction—we cultivate compassionate, highly skilled health workers who lead with clinical integrity."</p>
+                    <p>We are dedicated to bridging the gap between theoretical medical knowledge and practical clinical application. Through our state-of-the-art simulation laboratories, experienced faculty, and rigorous hospital rotations, our students graduate ready to meet both regional and global healthcare challenges.</p>
+                    <p>Whether you aspire to practice in community health settings, surgical wards, or pursue international healthcare opportunities, Kituuza provides the disciplined foundation you need to succeed.</p>
+                    
+                    <div class="director-signature">
+                        <div class="sig-details">
+                            <h4>Management & Clinical Board</h4>
+                            <p>Kituuza School of Nursing & Midwifery</p>
+                        </div>
+                        <a href="director-message.html" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-user-gear"></i> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Programs Preview -->
+    <section class="section section-no-gap" style="background: #f8fafc; padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Academic Excellence</span>
+                <h2>Our Specialized Programs</h2>
+                <p>Comprehensive clinical education tailored to produce world-class health practitioners.</p>
+            </div>
+
+            <div class="grid grid-2 gap-8 mt-4" style="align-items: stretch;">
+                <!-- Card 1: Nursing -->
+                <div class="program-preview-card" style="display: flex; flex-direction: column;">
+                    <div class="card-image-wrap">
+                        <img src="images/ward.jpeg" alt="Certificate in General Nursing">
+                        <span class="card-badge">2.5 Years</span>
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex: 1;">
+                        <span class="accredited-tag"><i class="fa-solid fa-shield-halved"></i> ACCREDITED</span>
+                        <h3>Certificate in Nursing</h3>
+                        <p>Master medical-surgical care, clinical pharmacology, emergency response, and patient advocacy in hospital settings.</p>
+                        <ul class="program-highlights" style="flex: 1;">
+                            <li><i class="fa-solid fa-check text-primary"></i> Bedside Nursing & Emergency Trauma Care</li>
+                            <li><i class="fa-solid fa-check text-primary"></i> Pharmacology & Surgical Ward Rotations</li>
+                            <li><i class="fa-solid fa-check text-primary"></i> Integrated Language & Digital Health Track</li>
+                        </ul>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="academics.html#nursing" class="btn-link">Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="admissions.html#apply" class="btn btn-primary btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Midwifery -->
+                <div class="program-preview-card" style="display: flex; flex-direction: column;">
+                    <div class="card-image-wrap">
+                        <img src="images/nursing-lab.jpg" alt="Certificate in Midwifery">
+                        <span class="card-badge badge-teal">2.5 Years</span>
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex: 1;">
+                        <span class="accredited-tag text-teal"><i class="fa-solid fa-shield-halved"></i> ACCREDITED</span>
+                        <h3>Certificate in Midwifery</h3>
+                        <p>Specialized maternal and child health training covering antenatal care, safe labor management, and newborn care.</p>
+                        <ul class="program-highlights" style="flex: 1;">
+                            <li><i class="fa-solid fa-check text-teal"></i> Obstetric & Neonatal Resuscitation</li>
+                            <li><i class="fa-solid fa-check text-teal"></i> Prenatal Screening & Childbirth Management</li>
+                            <li><i class="fa-solid fa-check text-teal"></i> Maternal Health Leadership & Field Practicals</li>
+                        </ul>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="academics.html#midwifery" class="btn-link text-teal">Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="admissions.html#apply" class="btn btn-teal btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Sports, Fitness & Emergency First Aid Showcase -->
+    <section class="section section-no-gap" id="sports-first-aid" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">CO-CURRICULAR & RECREATION</span>
+                <h2>Sports, Fitness & Emergency First Aid</h2>
+                <p>Promoting physical well-being, teamwork, and immediate responder skills alongside rigorous clinical training.</p>
+            </div>
+
+            <div class="grid grid-3 gap-8 mt-4">
+                <div class="media-feature-card">
+                    <div class="card-media-wrap">
+                        <img src="images/ball.jpg" alt="Campus Football & Athletics">
+                        <div class="media-type-badge"><i class="fa-solid fa-trophy"></i> Inter-House Sports</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Campus Football & Athletics</h3>
+                        <p>Students participate in competitive football matches and track events to build resilience and teamwork.</p>
+                        <a href="student-life.html#sports" class="btn-link">View Sports Life <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="media-feature-card">
+                    <div class="card-media-wrap">
+                        <video width="400" height="200" controls>
+                            <source src="videos/community.mp4" type="video/mp4">
+                            <source src="movie.webm" type="video/webm">
+                        </video>
+                        <div class="media-type-badge badge-teal"><i class="fa-solid fa-kit-medical"></i> First Aid Drills</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Community First Aid Drills</h3>
+                        <p>Practical outreach simulations teaching basic life support, hemorrhage control, and rapid triage in field settings.</p>
+                        <a href="student-life.html#outreach" class="btn-link text-teal">Outreach Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="media-feature-card">
+                    <div class="card-media-wrap">
+                        <img src="images/football1.jpeg" alt="Fitness & Health Drills">
+                        <div class="media-type-badge badge-gold"><i class="fa-solid fa-heart-pulse"></i> Student Wellness</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Physical Fitness & Wellness</h3>
+                        <p>Routine physical conditioning and recreational games that keep trainees energetic and healthy.</p>
+                        <a href="student-life.html#recreation" class="btn-link text-amber">Explore Student Life <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus & Learning Environment Grid (Soft Mint-Cyan Gradient Background) -->
+    <section class="facilities-section-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag" style="background: rgba(14, 165, 233, 0.15); color: #0284c7;">PRACTICAL TRAINING</span>
+                <h2 style="color: #0f172a; font-size: 2.2rem; margin-top: 0.5rem;">State-of-the-Art Clinical Facilities</h2>
+                <p style="color: #475569;">Designed to give every student hands-on experience before entering hospital wards.</p>
+            </div>
+
+            <div class="grid grid-3 gap-8 mt-4">
+                <div class="facilities-card">
+                    <img src="images/simulations.jpeg" alt="Simulation Skill Labs" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="facility-card-body" style="padding: 1.5rem;">
+                        <div class="facility-icon" style="background: #e0f2fe; color: #0284c7; width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;"><i class="fa-solid fa-vial"></i></div>
+                        <h3 style="color: #0f172a; margin-bottom: 0.5rem;">Clinical Simulation Labs</h3>
+                        <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">Practice emergency procedures, IV therapy, and catheterization in controlled lab conditions.</p>
+                    </div>
+                </div>
+
+                <div class="facilities-card">
+                    <img src="images/rotations.jpeg" alt="Hospital Ward Rotations" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="facility-card-body" style="padding: 1.5rem;">
+                        <div class="facility-icon" style="background: #ccfbf1; color: #0d9488; width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;"><i class="fa-solid fa-hospital-user"></i></div>
+                        <h3 style="color: #0f172a; margin-bottom: 0.5rem;">Supervised Ward Rotations</h3>
+                        <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">Gain direct clinical experience working with doctors and senior nurses in partner hospitals.</p>
+                    </div>
+                </div>
+
+                <div class="facilities-card">
+                    <img src="images/reading.jpg" alt="Digital Library & Resource Center" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="facility-card-body" style="padding: 1.5rem;">
+                        <div class="facility-icon" style="background: #fef3c7; color: #d97706; width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;"><i class="fa-solid fa-book-open"></i></div>
+                        <h3 style="color: #0f172a; margin-bottom: 0.5rem;">Library & Digital Resource Center</h3>
+                        <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">Access online medical journals, research papers, and ICT facilities for modern health research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="cta-banner section-no-gap">
+        <div class="container text-center">
+            <h2>Ready to Begin Your Healthcare Career?</h2>
+            <p>Enroll today at Kituuza School of Nursing & Midwifery and step into a rewarding future in clinical medicine.</p>
+            <div class="cta-buttons justify-center">
+                <a href="admissions.html#apply" class="btn btn-accent btn-lg"><i class="fa-solid fa-paper-plane"></i> Submit Application</a>
+                <a href="admissions.html" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-clipboard-list"></i> Admission Requirements</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4 gap-8">
+                <div>
+                    <h3 class="footer-title">KITUUZA</h3>
+                    <p class="footer-sub">School of Nursing & Midwifery</p>
+                    <p class="footer-text">Educating compassionate, highly skilled healthcare professionals to global clinical standards.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About & Leadership</a></li>
+                        <li><a href="academics.html">Academic Curriculum</a></li>
+                        <li><a href="global-standards.html">Global Pathways</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Admissions</h4>
+                    <ul class="footer-links">
+                        <li><a href="admissions.html">Requirements</a></li>
+                        <li><a href="admissions.html#apply">Online Application</a></li>
+                        <li><a href="student-life.html">Campus Hostels</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p class="footer-contact-info">
+                        <i class="fa-solid fa-location-dot"></i> Off Katosi Road, Kisoga, Mukono<br>
+                        <i class="fa-solid fa-phone"></i> +256 786 311301/+256 703 417598<br>
+                        <i class="fa-solid fa-envelope"></i> info@kituuza.ac.ug
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Kituuza School of Nursing & Midwifery, Mukono. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File Linking -->
+    <script src="js/main.js"></script>
+</body>
+</html>
